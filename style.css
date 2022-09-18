@@ -1,66 +1,53 @@
 html{
     background-color: black;
+    color: yellow;
 }
-
-.text-input-area{
+header{
+    color: rgb(0,110,255);
+    text-align: center;
+    font-size: xx-large;
+}
+#tt:focus{
+    border: 7px solid orange;
+}
+#tt{
+    resize: none;
+    width: 90%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
+    border: 3px solid red;
+    font-size: x-large;
+}
+.controls{
+    width: 100%;
+}
+input{
+    font-size: larger;
+    display: block;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 25px;
     margin-bottom: 25px;
 }
-
-
-#text-input::placeholder{
-    font-size: xx-large;
-    color: white;
-}
-
-#text-input{
-    padding: 1%;
-    font-size: xx-large;
-    width: 80%;
-    height: auto;
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-    background-color: grey;
-    color: white;
-    word-wrap: break-word;
-    resize: none;
-    overflow: auto;
-}
-.preview{
-    height: auto;
-    width: 80%;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    border: 1px solid red;
-    font-size: xx-large;
-    color: rgb(0,110,255);
-    padding: 1%;
-    word-wrap: break-word;
-}
-
-#print-btn{
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    height: 50px;
-    width: 5%;
-    border-radius: 15px;
-    font-size: x-large;
-    background-color: red;
-    color: white;
-    border: 3px solid rgb(0,110,255);
+.n{
+    width: fit-content;
+    margin: auto;
     margin-top: 25px;
 }
-
+button{
+    color: rgb(0,110,255);
+    background-color: black;
+    border: 3px solid rgb(0,110,255);
+    font-size: x-large;
+}
 @media print{
-    .text-input-area,#print-btn{
+    button,header,input{
         display: none;
     }
-    .preview{
+    #tt{
         border: none;
-        color: black;
     }
 }

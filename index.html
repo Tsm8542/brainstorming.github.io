@@ -1,17 +1,23 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Brainstorming</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Manipulation</title>
 </head>
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
 <body>
-    <div class="text-input-area">
-        <textarea oninput="x()" type="text" id="text-input" placeholder="Brainstorming session starts here....." autofocus></textarea>
+    <header>
+        Welcome Boss, pleased to see you work!
+    </header>
+    <input type="file" name="" id="load" onchange="l()">
+    <textarea name="" id="tt" cols="30" rows="10"></textarea>
+    <div class="controls">
+        <div class="n">
+            <button onclick="s()">Generate TXT</button>
+            <button onclick="p()">Generate PDF</button>
+        </div>
     </div>
-    <div class="preview">
-        All your text comes here...
-    </div>
-    <button id="print-btn" onclick="p()">Print</button>
 </body>
 </html>
