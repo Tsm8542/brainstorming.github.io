@@ -43,11 +43,19 @@ button{
     border: 3px solid rgb(0,110,255);
     font-size: x-large;
 }
+#pt{
+    visibility: hidden;
+}
 @media print{
     button,header,input{
         display: none;
     }
     #tt{
-        border: none;
+        display: none;
+    }
+    #pt{
+        visibility: visible;
+        color: black;
+        font-size: large;
     }
 }

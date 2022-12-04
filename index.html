@@ -7,17 +7,18 @@
 </head>
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
-<body>
+<body onload="m()">
     <header>
         Welcome Boss, pleased to see you work!
     </header>
     <input type="file" name="" id="load" onchange="l()">
-    <textarea name="" id="tt" cols="30" rows="10"></textarea>
+    <textarea name="" id="tt" cols="30" rows="10" oninput="x()"></textarea>
     <div class="controls">
         <div class="n">
             <button onclick="s()">Generate TXT</button>
             <button onclick="p()">Generate PDF</button>
         </div>
     </div>
+    <div id="pt"></div>
 </body>
 </html>

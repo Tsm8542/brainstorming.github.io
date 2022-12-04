@@ -15,7 +15,20 @@ function l(){
         document.getElementById("tt").value = load;
     }
     reader.readAsText(file);
+    let x = document.querySelector("#pt");
+    x.innerText = document.getElementById("tt").value;
 }
 function p(){
     window.print();
+}
+
+function x(){
+    var z = document.querySelector("#tt").value;
+    localStorage.setItem('text',z);
+    let x = document.querySelector("#pt");
+    x.innerText = document.getElementById("tt").value;
+}
+function m(){
+    if(localStorage.text!=undefined)
+    document.querySelector("#tt").innerHTML = localStorage.text;
 }
