@@ -23,12 +23,12 @@ function p(){
 }
 
 function x(){
-    var z = document.querySelector("#tt").value;
-    localStorage.setItem('text',z);
+    var ajkld = document.querySelector("#tt").value;
+    localStorage.setItem('skjl',ajkld);
     let x = document.querySelector("#pt");
     x.innerText = document.getElementById("tt").value;
 }
 function m(){
-    if(localStorage.text!=undefined)
-    document.querySelector("#tt").innerHTML = localStorage.text;
+    if(localStorage.skjl!=undefined)
+    document.querySelector("#tt").innerHTML = localStorage.skjl;
 }
